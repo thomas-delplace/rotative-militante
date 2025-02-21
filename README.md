@@ -10,13 +10,16 @@ Générateur de visuels pour les réseaux sociaux à l'usage des militant·e·s 
 
 ### 1. Format
 
-L'utilisateurice aura le choix entre plusieurs formats se déclinant en *portrait* et en *paysage* :
-- 1:1
-- 4:5
-- 3:4
-- ISO (ex: A4)
-- 2:3
-- 9:16
+L'utilisateurice aura le choix entre plusieurs formats se déclinant en ***portrait*** et en ***paysage*** :
+
+| portrait | paysage | utilisation |
+| :--: | :--: | :-- |
+| 1:1 || instagram, twitter, etc. |
+| 4:5 | 5:4 | instagram, twitter, etc. |
+| 3:4 | 4:3 | twitter, facebook, etc. |
+| ISO || impression A4, A3, etc. |
+| 2:3 | 3:2 | twitter, facebook, etc. |
+| 9:16 | 16:9 | story instagram |
 
 ### 2. Couleur de fond
 
