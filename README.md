@@ -14,10 +14,10 @@ L'utilisateurice aura le choix entre plusieurs formats se déclinant en ***portr
 
 | portrait | paysage | utilisation |
 | :--: | :--: | :-- |
-| 1:1 || instagram, twitter, etc. |
+| 1:1 | - | instagram, twitter, etc. |
 | 4:5 | 5:4 | instagram, twitter, etc. |
 | 3:4 | 4:3 | twitter, facebook, etc. |
-| ISO || impression A4, A3, etc. |
+| ISO | - | impression A4, A3, etc. |
 | 2:3 | 3:2 | twitter, facebook, etc. |
 | 9:16 | 16:9 | story instagram |
 
