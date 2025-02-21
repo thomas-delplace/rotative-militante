@@ -26,7 +26,7 @@ L'utilisateurice aura le choix entre plusieurs formats se déclinant en ***portr
 ### 2. Couleur de fond
 
 | couleur | infos | code |
-| :-- | :-- | :-- |
+| :-- | :--: | :--: |
 | dégradé violet-rouge | LFI rgb | `#7b13d6` / `#f91616` |
 | dégradé violet-rouge 2 | LFI cmyk | `#58398e` / `#da3933` |
 | dégradé rose-turquoise  | LFI rgb | `#ed5fb1` / `#3885f4` |
