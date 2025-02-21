@@ -58,6 +58,8 @@ L'utilisateurice aura le choix entre plusieurs formats se déclinant en ***portr
 | marron 2 |  | `#744b23` |
 | marron 3 |  | `#a98b4e` |
 
+![Idée d'interface de selection de couleur](./_utils/palette.png)
+
 ### 3. Texture
 
 - sans
