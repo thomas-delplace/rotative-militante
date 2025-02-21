@@ -77,14 +77,60 @@ L'utilisateurice peut appliquer un filigrane sur tout le slides ou un filigrane 
 
 ### 5. Fil d'ariane
 
-- x/x
-- jauge serrée pleine carrée
-- jauge serrée coupée carrée
-- jauge serrée pleine arrondie
-- jauge serrée coupée arrondie
-- jauge étendue pleine
-- jauge étendue coupée
-- puces rondes 1
-- puces rondes 2
-- puces carrées 1
-- puces carrées 2
+> **JAUGE ETENDUE CONTINUE**
+> ![puces rondes 1](./_utils/jauge_etendue_continue.png)
+
+> **JAUGE ETENDUE COUPÉE**
+> ![puces rondes 1](./_utils/jauge_etendue_coupee.png)
+
+> **PUCES RONDES 1**
+> ![puces rondes 1](./_utils/puces_rondes_1.png)
+
+> **PUCES RONDES 2**
+> ![puces rondes 1](./_utils/puces_rondes_2.png)
+
+> **PUCES CARRÉES 1**
+> ![puces rondes 1](./_utils/puces_carrees_1.png)
+
+> **PUCES CARRÉES 2**
+> ![puces rondes 1](./_utils/puces_carrees_2.png)
+
+> **A AJOUTER**
+> `x/x` `jauge serrée pleine` `jauge serrée coupée` `jauge serrée pleine arrondie` `jauge serrée coupée arrondie`
+
+### 6. Titre
+
+| Style | Alignement |
+| :--: | :--: |
+| cutout 1 | gauche |
+| cutout 2 | centre |
+| cutout 3 | droit |
+| bandeau 1 |  |
+| bandeau 2 |  |
+| bandeau 3 |  |
+| simple 1 |  |
+| simple 2 |  |
+| simple 3 |  |
+
+### 7. Texte
+| Style | Alignement |
+| :--: | :--: |
+| simple 1 | gauche |
+| simple 2 | centre |
+| simple 3 | droit |
+| simple 4 |  |
+| liste 1 |  |
+| liste 2 |  |
+| liste 3 |  |
+| liste 4 |  |
+
+### 8. Logo
+
+| Type | Boite | Placement | Couleur |
+| :--: | :--: | :--: | :--: |
+| aucun | sans | haut-gauche | blanc |
+| LFI Horizontal | boite 1 | haut-droit | noir |
+| LFI vertical | boite 2 | bas-gauche | dégradé rgb |
+| LFI side | boite 3 | bas-droit | dégradé cmyk |
+| LFI seul | boite 4 | centre-haut |  |
+|  |  | centre-bas |  |
