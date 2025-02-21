@@ -3,20 +3,20 @@
 Générateur de visuels pour les réseaux sociaux à l'usage des militant·e·s de gauche. Cette WebApp offre un outil simplifié permettant l'utilisation de templates pour générer rapidement des visuels, slides et affiches qui respectent les règles de base de design et permettent à des militant·e·s sans grande connaissance d'être autonomes.
 
 **Technologies utilisées**
-> * ReactJS
-> * NextJS
+* ReactJS
+* NextJS
 
 ## FONCTIONNALITÉS
 
 ### 1. Format
 
-> L'utilisateurice aura le choix entre plusieurs formats se déclinant en *portrait* et en *paysage* :
-> - 1:1
-> - 4:5
-> - 3:4
-> - ISO (ex: A4)
-> - 2:3
-> - 9:16
+L'utilisateurice aura le choix entre plusieurs formats se déclinant en *portrait* et en *paysage* :
+- 1:1
+- 4:5
+- 3:4
+- ISO (ex: A4)
+- 2:3
+- 9:16
 
 ### 2. Couleur de fond
 
