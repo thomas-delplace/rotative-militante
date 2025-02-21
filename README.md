@@ -21,6 +21,8 @@ L'utilisateurice aura le choix entre plusieurs formats se déclinant en ***portr
 | 2:3 | 3:2 | twitter, facebook, etc. |
 | 9:16 | 16:9 | story instagram |
 
+![Idée d'interface de selection du format](./_utils/formats.png)
+
 ### 2. Couleur de fond
 
 | couleur | infos | code |
@@ -55,3 +57,32 @@ L'utilisateurice aura le choix entre plusieurs formats se déclinant en ***portr
 | marron 1 |  | `#7a3c2d` |
 | marron 2 |  | `#744b23` |
 | marron 3 |  | `#a98b4e` |
+
+### 3. Texture
+
+- sans
+- lin
+- grés 
+- bruit blanc
+- quadrillage
+- pointillisme / halftone
+- papier chiffoné
+- papier gauffré
+
+### 4. Filigrane
+
+L'utilisateurice peut appliquer un filigrane sur tout le slides ou un filigrane différent par slide.
+
+### 5. Fil d'ariane
+
+- x/x
+- jauge serrée pleine carrée
+- jauge serrée coupée carrée
+- jauge serrée pleine arrondie
+- jauge serrée coupée arrondie
+- jauge étendue pleine
+- jauge étendue coupée
+- puces rondes 1
+- puces rondes 2
+- puces carrées 1
+- puces carrées 2
