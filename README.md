@@ -35,7 +35,7 @@ Générateur de visuels pour les réseaux sociaux à l'usage des militant·e·s 
 | vert | LFI rgb | `#2e9959` |
 | jaune | LFI rgb | `#f9c900` |
 | bleu canard |  | `#008890` |
-| bleu Jeunes Insoumis |  | `#13235f` |
+| bleu foncé | Jeunes Insoumis | `#13235f` |
 | rose foncé |  | `#843473` |
 | vert foncé |  | `#126c00` |
 | vert vif |  | `#4dc104` |
