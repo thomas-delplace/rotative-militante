@@ -11,6 +11,13 @@
   background-color: red;
 }
 
+.center_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .button_sidebar {
   position: fixed;
@@ -28,4 +35,26 @@
 .button_icon {
   height:8vh;
   width:8vh;
+}
+
+.show_pickers_elements {
+  position:fixed;
+  top: 20%;
+  left:20%;
+
+  width: 60%;
+  height: 60%;
+
+  border-style: solid;
+  border: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 2;
+}
+.button_format {
+
 }
