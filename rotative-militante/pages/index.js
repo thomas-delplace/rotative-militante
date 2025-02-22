@@ -1,6 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+
+/*
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+*/
+import logo from './logo.svg';
 
 function App() {
   const [isVisibleFormat, setIsVisibleFormat] = useState(false);
@@ -56,7 +70,7 @@ function App() {
 
   const formatButtonList = buttonsFormat.map((button, index) => (
     <button className="button_format" onClick={button.jsfunction} title={button.popoverDesc} style={{aspectRatio:button.value}}>
-      {button.format}
+    {button.format}
     </button>
   ));
 
@@ -88,8 +102,8 @@ function App() {
 function FormatPicker({ buttonsList }) {
   return (
     <div className="center_content">
-      <div>{ buttonsList }</div>
-      <div>Portrait <input type="checkbox" /> Paysage</div>
+    <div>{ buttonsList }</div>
+    <div>Portrait <input type="checkbox" /> Paysage</div>
     </div>
   );
 }
