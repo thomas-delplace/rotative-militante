@@ -2,15 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 
 const buttonsToPutInSidebar = [
-  { title: "Bouton1", img: "https://cataas.com/cat", jsfunction: () => alert("Bouton1 cliqué"), popoverDesc: "Ceci est le bouton1" },
-  { title: "Bouton2", img: "https://cataas.com/cat", jsfunction: () => alert("Bouton2 cliqué"), popoverDesc: "Ceci est le bouton2" },
-  { title: "Bouton3", img: "https://cataas.com/cat", jsfunction: () => alert("Bouton3 cliqué"), popoverDesc: "Ceci est le bouton3" }
+  { title: "Format", img: "https://cataas.com/cat", jsfunction: () => alert("Format cliqué"), popoverDesc: "Ceci est le bouton1" },
+  { title: "Couleur de fond", img: "https://cataas.com/cat?a=1", jsfunction: () => alert("Bouton2 cliqué"), popoverDesc: "Ceci est le bouton2" },
+  { title: "Fil d'ariane", img: "https://cataas.com/cat?a=2", jsfunction: () => alert("Bouton3 cliqué"), popoverDesc: "Ceci est le bouton3" }
 ];
 
 const buttonsList = buttonsToPutInSidebar.map((button, index) => (
   <li key={index}>
-  <button onClick={button.jsfunction} title={button.popoverDesc}>
-  <img className="ButtonIcon" src={button.img} alt={button.title} />
+  <button className="button" onClick={button.jsfunction} title={button.popoverDesc}>
+  <img className="button_icon" src={button.img} alt={button.title} />
   <br />
   {button.title}
   </button>
@@ -19,29 +19,15 @@ const buttonsList = buttonsToPutInSidebar.map((button, index) => (
 
 function ButtonSidebar() {
   return (
-    <ul className="ButtonSidebar">{buttonsList}</ul>
+    <div className="button_sidebar_container">
+    <ul className="button_sidebar">{buttonsList}</ul>
+    </div>
   );
 }
 
 function App() {
   return (
-    <div className="App">
-    <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo" />
     <ButtonSidebar />
-    <p>
-    Edit <code>src/App.js</code> and save to reload.
-    </p>
-    <a
-    className="App-link"
-    href="https://reactjs.org"
-    target="_blank"
-    rel="noopener noreferrer"
-    >
-    Learn React
-    </a>
-    </header>
-    </div>
   );
 }
 
