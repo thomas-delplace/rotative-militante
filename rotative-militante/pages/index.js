@@ -16,6 +16,8 @@ reportWebVitals();
 */
 import logo from './logo.svg';
 
+let bgcolor = "#000000";
+
 function App() {
   const [isVisibleFormat, setIsVisibleFormat] = useState(false);
   const [isVisibleColor, setIsVisibleColor] = useState(false);
@@ -146,6 +148,10 @@ function App() {
       </div>
     )}
     </div>
+
+    <div>
+    <Svg color={bgcolor} />
+    </div>
     </div>
   );
 }
@@ -181,6 +187,33 @@ function ButtonSidebar({ buttonsList }) {
     <div className="button_sidebar_container">
     <ul className="button_sidebar">{buttonsList}</ul>
     </div>
+  );
+}
+
+function Svg({ color }) {
+  return (
+    <svg
+    viewBox="0 0 500 500"
+    xmlns="http://www.w3.org/2000/svg"
+
+    className="central_svg"
+    >
+    <rect width="100%" height="100%" fill={color} />
+    <g fill="red">
+    <g id="fil_ariane" transform="translate(30, 450)">
+      <circle id="puce_01" cx="22" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_02" cx="66" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_03" cx="110" cy="22" r="22" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_04" cx="154" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_05" cx="198" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_06" cx="242" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_07" cx="286" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_08" cx="330" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_09" cx="374" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_10" cx="418" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+    </g>
+    </g>
+    </svg>
   );
 }
 

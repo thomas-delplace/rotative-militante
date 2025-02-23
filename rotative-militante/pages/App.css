@@ -75,3 +75,12 @@
   padding: 20px;
   border-radius: 5px;
 }
+
+.central_svg {
+  width:60%;
+  height:60%;
+
+  position:fixed;
+  top:20%;
+  left:20%;
+}
