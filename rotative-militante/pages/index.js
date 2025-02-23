@@ -16,8 +16,6 @@ reportWebVitals();
 */
 import logo from './logo.svg';
 
-let bgcolor = "#000000";
-
 function App() {
   const [isVisibleFormat, setIsVisibleFormat] = useState(false);
   const [isVisibleColor, setIsVisibleColor] = useState(false);
@@ -42,6 +40,12 @@ function App() {
 
     setIsVisibleColor(false);
     setIsVisibleFormat(false);
+  };
+
+  const [backgroundColor, setBackgroundColor] = useState('red');
+
+  const setBgColor = (color) => {
+    setBackgroundColor(color);
   };
 
 
@@ -117,7 +121,13 @@ function App() {
   ));
 
   const colorButtonList = colorPickerList.map((button, index) => (
-    <button className="button_format cell" title={button.title} style={{background:button.color}}>
+    <button
+    key={index}
+    className="button_format cell"
+    title={button.title}
+    style={{ background: button.color }}
+    onClick={() => setBgColor(button.color)}
+    >
     </button>
   ));
 
@@ -150,7 +160,7 @@ function App() {
     </div>
 
     <div>
-    <Svg color={bgcolor} />
+    <Svg backgroundColor={backgroundColor} />
     </div>
     </div>
   );
@@ -190,7 +200,7 @@ function ButtonSidebar({ buttonsList }) {
   );
 }
 
-function Svg({ color }) {
+function Svg({ backgroundColor }) {
   return (
     <svg
     viewBox="0 0 500 500"
@@ -198,12 +208,23 @@ function Svg({ color }) {
 
     className="central_svg"
     >
-    <rect width="100%" height="100%" fill={color} />
+    <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+    {backgroundColor.includes('linear-gradient') ? (
+      backgroundColor.match(/#([\da-f]{6})/gi).map((color, index) => (
+        <stop key={index} offset={`${(index / (backgroundColor.match(/#[\da-f]{6}/gi).length - 1)) * 100}%`} stopColor={color} />
+      ))
+    ) : (
+      <stop offset="0%" stopColor={backgroundColor} />
+    )}
+    </linearGradient>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#bgGradient)" />
     <g fill="red">
     <g id="fil_ariane" transform="translate(30, 450)">
-      <circle id="puce_01" cx="22" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_01" cx="22" cy="22" r="22" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="4" />
       <circle id="puce_02" cx="66" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
-      <circle id="puce_03" cx="110" cy="22" r="22" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="4" />
+      <circle id="puce_03" cx="110" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
       <circle id="puce_04" cx="154" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
       <circle id="puce_05" cx="198" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
       <circle id="puce_06" cx="242" cy="22" r="22" fill="#ffffff" fill-opacity="0.3" stroke="#ffffff" stroke-width="4" />
