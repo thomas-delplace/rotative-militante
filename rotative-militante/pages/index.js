@@ -58,6 +58,46 @@ function App() {
     { format: "9:16", value:"4/5"},
   ];
 
+  const colorPickerList = [
+    {color:"linear-gradient(-45deg, #7b13d6, #f91616)", title:"Dégradé Violet Rouge"},
+    {color:"linear-gradient(-45deg, #58398e, #da3933)", title:"Dégradé pour impression Violet Rouge"},
+    {color:"linear-gradient(-45deg, #ed5fb1, #3885f4)", title:"Dégradé Rose Turquoise"},
+    {color:"linear-gradient(-45deg, #d25c50, #13235f)", title:"Dégradé Saumon Bleu"},
+    {color:"#7b13d6", title:"Violet"},
+    {color:"#f91616", title:"Rouge"},
+    {color:"#ed5fb1", title:"Rose"},
+    {color:"#3885f4", title:"Bleu"},
+    {color:"#f9c900", title:"Jaune"},
+    {color:"#2e9959", title:"Vert"},
+    { color: "#843473", title: "Rose foncé" },
+    { color: "#d25c50", title: "Saumon" },
+    { color: "#ff8518", title: "Orange" },
+    { color: "#f0a400", title: "Jaune or" },
+    { color: "#fffb56", title: "Jaune pâle" },
+    { color: "#4dc104", title: "Vert vif" },
+    { color: "#126c00", title: "Vert foncé" },
+    { color: "#008890", title: "Bleu canard" },
+    { color: "#13235f", title: "Bleu foncé" },
+    { color: "#ffdc98", title: "Crême" },
+    { color: "#7a3c2d", title: "Marron 1" },
+    { color: "#744b23", title: "Marron 2" },
+    { color: "#a98b4e", title: "Marron 3" },
+    { color: "#cbcbcb", title: "Gris 1" },
+    { color: "#8f8f8f", title: "Gris 2" },
+    { color: "#444444", title: "Gris 3" },
+    { color: "#3d3d3d", title: "Gris 4" },
+    { color: "#212121", title: "Gris 5" }
+  ]
+
+  const ArianePickerList = [
+    {img:"jauge_etendue_continue.png"},
+    {img:"jauge_etendue_coupee.png"},
+    {img:"puces_carrees_1.png"},
+    {img:"puces_carrees_2.png"},
+    {img:"puces_rondes_1.png"},
+    {img:"puces_rondes_2.png"}
+  ]
+
   const buttonsList = buttonsToPutInSidebar.map((button, index) => (
     <li key={index}>
     <button className="button" onClick={button.jsfunction} title={button.popoverDesc}>
@@ -74,6 +114,17 @@ function App() {
     </button>
   ));
 
+  const colorButtonList = colorPickerList.map((button, index) => (
+    <button className="button_format cell" title={button.title} style={{background:button.color}}>
+    </button>
+  ));
+
+  const arianeButtonList = ArianePickerList.map((button, index) => (
+    <button>
+      <img src={button.img} />
+    </button>
+  ));
+
   return (
     <div>
     <ButtonSidebar buttonsList={buttonsList} />
@@ -85,12 +136,13 @@ function App() {
     )}
     {isVisibleColor && (
       <div className="show_pickers_elements">
-      Color
+      Couleur de fond
+      <ColorPicker buttonsList={colorButtonList} />
       </div>
     )}
     {isVisibleAriane && (
       <div className="show_pickers_elements">
-      Ariane
+      <ArianePicker buttonsList={arianeButtonList} />
       </div>
     )}
     </div>
@@ -104,6 +156,22 @@ function FormatPicker({ buttonsList }) {
     <div className="center_content">
     <div>{ buttonsList }</div>
     <div>Portrait <input type="checkbox" /> Paysage</div>
+    </div>
+  );
+}
+
+function ColorPicker({ buttonsList }) {
+  return (
+    <div className="center_content grid">
+      {buttonsList}
+    </div>
+  );
+}
+
+function ArianePicker({ buttonsList }) {
+  return (
+    <div className="center_content">
+      {buttonsList}
     </div>
   );
 }
