@@ -21,6 +21,17 @@ L'utilisateurice aura le choix entre plusieurs formats se déclinant en ***portr
 | 2:3 | 3:2 | twitter, facebook, etc. |
 | 9:16 | 16:9 | story instagram |
 
+```js
+const formats = {
+    "1:1" : "1p1",
+    "4:5" : "4p5",
+    "3:4" : "3p4",
+
+}
+
+let aspectRatio
+```
+
 ![Idée d'interface de selection du format](./_utils/formats.png)
 
 ### 2. Couleur de fond
@@ -236,3 +247,23 @@ L'utilisateurice peut appliquer un filigrane sur tout le slides ou un filigrane 
 | LFI side | boite 3 | bas-droit | dégradé cmyk |
 | LFI seul | boite 4 | centre-haut |  |
 |  |  | centre-bas |  |
+
+## SOUS LE CAPOT
+
+### Projet
+
+```js
+Class Projet {
+
+}
+```
+
+### Slide
+
+
+
+```js
+Class Slide {
+    constructor()
+}
+```
