@@ -53,7 +53,7 @@ class Format{
                 const largeur = this.#props.hauteur
                 this.#props.hauteur = hauteur
                 this.#props.largeur = largeur
-                console.log("nouvelle orientation okay")
+                // console.log("nouvelle orientation okay")
         }
         return this.#props.orientation
     }
@@ -68,7 +68,7 @@ class Format{
         if(arg && Ratios.liste.ratio.includes(arg)){
             this.#props.ratio = arg
             this.#recalcule()
-            console.log("nouveau ratio okay")
+            // console.log("nouveau ratio okay")
         }
         return this.#props.ratio
     }
