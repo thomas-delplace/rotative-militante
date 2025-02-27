@@ -44,8 +44,11 @@ class Format{
      * @returns {string} orientation
      */
     orientation(arg){
-        if(arg && Ratios.liste.orientation.includes(arg)){
-                this.#props.orientation = arg
+        if(arg && Ratios.liste.orientation.includes(arg)){ // si un argument est entré et s'il correspond à une des valeurs possibles
+                this.#props.orientation = arg // modification de la propriété orientation
+
+                // les quatre lignes ci-dessous inversent juste les valeurs.
+                // la hauteur devient la largeur et la largeur devient la hauteur
                 const hauteur = this.#props.largeur
                 const largeur = this.#props.hauteur
                 this.#props.hauteur = hauteur
