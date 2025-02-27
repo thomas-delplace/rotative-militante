@@ -65,9 +65,9 @@ class Format{
      * @returns {string} ratio
      */
     ratio(arg){
-        if(arg && Ratios.liste.ratio.includes(arg)){
-            this.#props.ratio = arg
-            this.#recalcule()
+        if(arg && Ratios.liste.ratio.includes(arg)){ // vérification de la présence d'un argument et du type de variable
+            this.#props.ratio = arg // changement de la propriété 
+            this.#recalcule() // recalculation des nouvelles dimensions 
             // console.log("nouveau ratio okay")
         }
         return this.#props.ratio
