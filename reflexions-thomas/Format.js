@@ -44,13 +44,16 @@ class Format{
      * @returns {string} orientation
      */
     orientation(arg){
-        if(arg && Ratios.liste.orientation.includes(arg)){
-                this.#props.orientation = arg
+        if(arg && Ratios.liste.orientation.includes(arg)){ // si un argument est entré et s'il correspond à une des valeurs possibles
+                this.#props.orientation = arg // modification de la propriété orientation
+
+                // les quatre lignes ci-dessous inversent juste les valeurs.
+                // la hauteur devient la largeur et la largeur devient la hauteur
                 const hauteur = this.#props.largeur
                 const largeur = this.#props.hauteur
                 this.#props.hauteur = hauteur
                 this.#props.largeur = largeur
-                console.log("nouvelle orientation okay")
+                // console.log("nouvelle orientation okay")
         }
         return this.#props.orientation
     }
@@ -62,10 +65,10 @@ class Format{
      * @returns {string} ratio
      */
     ratio(arg){
-        if(arg && Ratios.liste.ratio.includes(arg)){
-            this.#props.ratio = arg
-            this.#recalcule()
-            console.log("nouveau ratio okay")
+        if(arg && Ratios.liste.ratio.includes(arg)){ // vérification de la présence d'un argument et du type de variable
+            this.#props.ratio = arg // changement de la propriété 
+            this.#recalcule() // recalculation des nouvelles dimensions 
+            // console.log("nouveau ratio okay")
         }
         return this.#props.ratio
     }
@@ -75,9 +78,9 @@ class Format{
      * @returns {number} hauteur
      */
     hauteur(arg){
-        if(arg && typeof arg === "number"){
-            this.#props.hauteur = arg
-            this.#calculerLargeur()
+        if(arg && typeof arg === "number"){ // vérification de la présence d'un argument et du type de variable
+            this.#props.hauteur = arg // changement de la propriété 
+            this.#calculerLargeur() // recalculation des nouvelles dimensions
         }
         return this.#props.hauteur
     }
